@@ -1,0 +1,20 @@
+{
+  "name": "bower install --save backbone",
+  "description": "My first smart app",
+  "main": "index.js",
+  "authors": [
+    "nikunjness <nikunjthakkar1992@gmail.com>"
+  ],
+  "license": "BSD-2-Clause",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

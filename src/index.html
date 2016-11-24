@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/angular/angular-csp.css">
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/view1.css">
+    <!-- endinject -->
+</head>
+<body>
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular/index.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="app/index.controller.js"></script>
+    <script src="app/index.module.js"></script>
+    <script src="app/index.route.js"></script>
+    <script src="app/index.run.js"></script>
+    <script src="app/todo.js"></script>
+    <!-- endinject -->
+
+    <input type="text" ng-model="yourName" placeholder="Enter your name"/>
+    <label><h1>{{yourName}}</h1></label>
+    <div ng-controller="TodoListController as todoList">
+    <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+    [ <a href="" ng-click="todoList.archive()">archive</a> ]
+    <ul class="unstyled">
+        <li ng-repeat="todo in todoList.todos">
+            <label class="checkbox">
+                <input type="checkbox" ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text}}</span>
+            </label>
+        </li>
+    </ul>
+    <form ng-submit="todoList.addTodo()">
+        <input type="text" ng-model="todoList.todoText"  size="30"
+               placeholder="add new todo here">
+        <input class="btn-primary" type="submit" value="add">
+    </form>
+    </div>
+</body>
+</html>
+

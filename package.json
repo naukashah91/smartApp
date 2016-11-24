@@ -1,0 +1,43 @@
+{
+  "name": "smartApp",
+  "version": "0.0.0",
+  "description": "My first smart app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "gulp": "~3.9.1",
+    "wiredep": "~4.0.0",
+    "bluebird": "~3.4.6",
+    "browser": "~0.2.6",
+    "browser-sync": "~2.17.6",
+    "uglify-js": "~2.7.4",
+    "gulp-concat": "~2.6.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-util": "~3.0.7",
+    "require-dir": "~0.3.1"
+  },
+  "devDependencies": {
+    "gulp-inject": "~4.1.0",
+    "gulp": "~3.9.1",
+    "main-bower-files": "~2.13.1",
+    "gulp-sass": "~2.3.2",
+    "browser": "~0.2.6",
+    "gulp-rename": "~1.2.2",
+    "gulp-concat": "~2.6.1",
+    "gulp-uglify": "~2.0.0",
+    "gulp-sourcemaps": "~2.2.0",
+    "gulp-sourcemaps-support": "0.0.1",
+    "gulp-concat-css": "~2.3.0",
+    "gulp-clean-css": "~2.0.13",
+    "gulp-htmlbuild": "~0.4.2",
+    "gulp-webserver": "~0.9.1",
+    "gulp-html-replace": "~1.6.1",
+    "gulp-clean": "~0.3.2",
+    "run-sequence": "~1.2.2",
+    "gulp-jsmin": "~0.1.5"
+  }
+}
